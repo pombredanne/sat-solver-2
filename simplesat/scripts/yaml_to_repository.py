@@ -2,7 +2,6 @@
 """
 
 import argparse
-import sys
 
 import yaml
 
@@ -30,7 +29,7 @@ def yaml_to_repository(path):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("scenario", help="Yaml scenario file")
-    ns = p.parse_args(sys.argv[1:])
+    ns = p.parse_args()
 
     path = ns.scenario
     repository = yaml_to_repository(path)

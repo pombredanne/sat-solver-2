@@ -5,7 +5,6 @@ from enstaller.new_solver import Pool
 from enstaller.new_solver.yaml_utils import Scenario
 
 from simplesat.pysolver_with_policy import Solver
-from simplesat.rules_generator import PackageRule
 
 
 def print_rules(request, remote_repositories, installed_repository):
